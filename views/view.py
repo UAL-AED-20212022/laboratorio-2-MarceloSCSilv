@@ -47,11 +47,11 @@ def RPAE(pais_novo, pais_existeste, lista_On):
     lista_On.traverse_list()
 
 def RPII(pais, index,lista_On):
-    lista_On.insert_at_index(pais, index)
+    lista_On.insert_at_index(index,pais)
     lista_On.traverse_list()
 
-def VNE(pais, lista_On):
-    conta_pais = lista_On.get_count(pais)
+def VNE(lista_On):
+    conta_pais = lista_On.get_count()
     print(f"O número de elementos são {conta_pais}")
 
 def VP(pais, lista_On):
@@ -66,7 +66,7 @@ def EPE(lista_On):
     print(f"O país {pais} foi eliminado da lista")
 
 def EUE(lista_On):
-    pais = lista_On.get_last_node
+    pais = lista_On.get_last_node()
     lista_On.delete_at_end()
     print(f"O país {pais} foi eliminado da lista")
 
